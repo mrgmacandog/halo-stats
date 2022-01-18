@@ -14,6 +14,6 @@
 AUTOCODE_SECRET_TOKEN={YOUR_DEVELOPMENT_TOKEN}
 ```
 
-4. To start the node server, run `npm start` (or `npm run dev-start` to use `nodemon`) at the root of the directory
+4. To start the node server, run `npm start` (or `npm run server` to use `nodemon`) at the root of the directory
 5. To start the web app, in another terminal window, `cd client` and run `npm start`
 6. The node server will be listening at http://localhost:3001 and the web app can be viewed at http://localhost:3000

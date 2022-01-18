@@ -6,8 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "node server/index.js",
-    "dev-start": "nodemon server/index.js",
+    "server": "nodemon server/index.js",
     "build": "cd client && npm install && npm run build",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
