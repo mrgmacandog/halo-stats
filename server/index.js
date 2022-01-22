@@ -9,10 +9,10 @@ dotenv.config();
 const __dirname = path.resolve();
 const app = express();
 
-const index = path.join(__dirname, "client", "build", "index.html");
+const BUILD_FILE_PATH = path.join(__dirname, "client", "build");
 
 // Have Node serve the files for our built React app
-app.use(express.static(index));
+app.use(express.static(BUILD_FILE_PATH));
 
 // Handle GET requests to /api route
 app.use("/api", routes(app, express));
